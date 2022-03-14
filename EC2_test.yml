@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Creating an ec2 instance
+
+Resources:
+  Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: EMR
+      ImageId: ami-0e1d30f2c40c4c701
+      InstanceType: t2.micro
